@@ -9,12 +9,6 @@ ENV DOCKER_REMOTE_API="unix:///var/run/docker.sock"
 ENV ASPNETCORE_URLS="http://*:5050"
 ENV ASPNETCORE_ENVIRONMENT="Production"
 
-# Copy files to app directory
-COPY /release /app
-
-# Set working directory
-WORKDIR /app
-
 # Open port
 EXPOSE 5050/tcp
 
